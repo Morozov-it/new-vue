@@ -11,20 +11,11 @@
 
 
 <script>
+import toggleMixin from "@/mixins/toggleMixin";
+
 export default {
     name: 'modal-dialog', //для глобальной регистрации компонентов
-    props: {
-        show: {
-            type: Boolean,
-            required: true,
-            default: false //значение по default
-        }
-    },
-    methods: {
-        hideDialog() {
-            this.$emit('update:show', false) //это передача наверх для обновления props
-        }
-    }
+    mixins: [toggleMixin] //импорт миксина
 } 
 </script>
 

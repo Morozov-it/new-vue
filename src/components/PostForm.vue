@@ -3,6 +3,7 @@
         <h4>Creating posts</h4>
         <!-- директива v-model организует двустороннее связывание Vue3 -->
         <my-input 
+            v-focus
             v-model="post.title"
             type="text"
             placeholder="Title"

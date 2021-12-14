@@ -19,6 +19,7 @@
             
             <h3 style="margin-bottom: 10px">Post's page</h3>
             <my-input 
+                v-focus
                 v-model="searchQuery"
                 placeholder="Find..."
             />
@@ -67,6 +68,7 @@
             <!-- это элемент для бесконечной прокрутки -->
             <!-- Intersection observer API -->
             <!-- Ref для получения доступа к дом-элементу -->
+
             <div 
                 ref="observer"
                 class="observer">
